@@ -5,11 +5,11 @@ import com.dev.aula2.domain.exceptions.CarroMuitoLentoException;
 import com.dev.aula2.domain.exceptions.CarroMuitoRapidoException;
 import com.dev.aula2.domain.port.VeiculoInterface;
 
-public class Carro implements VeiculoInterface {
+public class CarroEntity implements VeiculoInterface {
 
     private final int velocidadeMaxima;
 
-    public Carro(int velocidadeMaxima) {
+    public CarroEntity(int velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 

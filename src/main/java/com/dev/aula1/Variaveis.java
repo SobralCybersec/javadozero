@@ -1,17 +1,19 @@
 package com.dev.aula1;
 
-public class Variáveis {
+public class Variaveis {
 
-
+    /**
+     *  Variáveis são declaradas com o tipo e o nome, servem para armazenar valores
+     *  Exemplo: String nome = "Sérgio";
+     */
 
     public static void main(String[] args) {
-        // Variáveis são declaradas com o tipo e o nome, servem para armazenar valores
 
         String nome = "Sérgio";
-        Integer idade = 20;
-        Double altura = 1.75;
-        Boolean temFilhos = true;
-        Character letra = 'S';
+        int idade = 20;
+        double altura = 1.75;
+        boolean temFilhos = true;
+        char letra = 'S';
 
         System.out.println("Nome: " + nome + "\nIdade: " + idade + "\nAltura: " + altura + "\nTem filhos: " + temFilhos + "\nLetra: " + letra);
     }

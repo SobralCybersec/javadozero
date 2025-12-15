@@ -1,10 +1,8 @@
 package com.dev.aula1;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.Inherited;
 import java.util.*;
 
-public class Arrays {
+public class AulaArrays {
 
     /**
      *  Arrays são utilizados para armazenar vários valores em uma única variável
@@ -20,6 +18,12 @@ public class Arrays {
         char[] arrayDeCaracteres = {'S', 'e', 'r', 'g', 'i', 'o'};
         double[] arrayDeDecimais = {1.1, 1.2, 1.3, 1.4, 1.5};
 
+
+        ArrayList<Double> arrayListDeDecimais = new ArrayList<>();
+        arrayListDeDecimais.add(1.1);
+        arrayListDeDecimais.add(1.7);
+        arrayListDeDecimais.add(1.8);
+
         ArrayList<String> arrayListDeStrings = new ArrayList<>();
         arrayListDeStrings.add("Sérgio");
         arrayListDeStrings.add("Math");
@@ -33,6 +37,8 @@ public class Arrays {
 
         HashMap<Integer, String> hashMapDeDoubleEInteiro = new HashMap<>();
         hashMapDeDoubleEInteiro.put(1, "Joana");
+        hashMapDeDoubleEInteiro.put(2, "Jorge");
+        hashMapDeDoubleEInteiro.put(3, "Joao");
 
         if (hashMapDeDoubleEInteiro.containsKey(1)) {
             System.out.println("Chave encontrada");
@@ -40,10 +46,10 @@ public class Arrays {
             System.out.println("Chave não encontrada");
         }
 
-
-        System.out.println("Array: " + java.util.Arrays.toString(arrayDeNumeros));
+        System.out.println("Array: " + Arrays.toString(arrayListDeDecimais.toArray()));
+        System.out.println("Array: " + Arrays.toString(arrayDeNumeros));
         System.out.println("Índice do Array: " + (arrayDeNumeros[0]));
         System.out.println("ArrayList: " + arrayListDeStrings);
-        System.out.println("ArrayList: " + arrayListDeStrings);
+        System.out.println("HashMap: " + hashMapDeDoubleEInteiro.values());
     }
 }

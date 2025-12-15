@@ -1,6 +1,6 @@
 package com.dev.aula2.domain.port;
 
 
-public interface Veiculo {
+public interface VeiculoInterface {
     void dirigir();
 }
