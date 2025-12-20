@@ -126,6 +126,42 @@ Conceitos avançados de Programação Orientada a Objetos:
 - **Encadeamento de Métodos** (`EncadeamentoDeMetodos.java`)
   - Retornar o próprio objeto para realizar operações em sequência
 
+
+## 📚 MindMap Aula - 4:
+
+<img src="https://i.imgur.com/GQA5FP2.png" width="800">
+
+<img src="https://i.imgur.com/vyTzxYK.jpeg" width="800">
+
+<img src="https://i.imgur.com/FAvaKAN.jpeg" width="800">
+
+## Aula 4 - UML (Classes e Sequência – aplicado a POO)
+
+Desafio: Sistema de Sincronização de Agendas para Saúde
+
+- **DTO** (`dto/`)
+  - `ResultadoAgendamento.java` - Record com resultado da operação (sucesso, mensagem)
+
+- **Entidades** (`entity/`)
+  - `Cliente.java` - Dados pessoais do cliente (nome, cpf) com validação
+  - `Agenda.java` - Controle de horários ocupados e verificação de conflitos
+
+- **Exceções** (`exceptions/`)
+  - `HorarioJaOcupadoException.java` - RuntimeException para horários já ocupados
+
+- **Interfaces** (`interfaces/`)
+  - `AgendarConsultasUseCase.java` - Contrato para agendamento de consultas
+
+- **Repositório** (`repository/`)
+  - `AgendaRepository.java` - Persistência de agendas com busca e criação
+
+- **Serviço** (`service/`)
+  - `AgendarConsultaService.java` - Implementa sincronização com pattern Result e prevenção de conflitos
+
+- **Main** (`Main.java`)
+  - Demonstração do sistema de agendamento
+
+
 ## 🚀 Como Executar
 
 ```bash
@@ -138,14 +174,14 @@ mvn exec:java -Dexec.mainClass="com.dev.aula1.NomeDaClasse"
 
 ## 📝 Notas
 
-_Próxima Aula: UML (Classes e Sequência - aplicado a POO)_
+_Próxima Aula: Exceptions, Anotações, Injeção de Dependência, Módulos, Optionals, Operações I/O, Operações de Arquivos_
 
 ## 🎯 Próximas Aulas
 
 - [X] _Fundamentos e Conceitos Básicos da Linguagem Java_
 - [X] _Básico de Programação Orientada a Objetos_
 - [X] _Aprofundar POO_
-- [ ] _UML (Classes e Sequência – aplicado a POO)_
+- [X] _UML (Classes e Sequência – aplicado a POO)_
 - [ ] _Exceptions, Anotações, Injeção de Dependência, Módulos, Optionals, Operações I/O, Operações de Arquivos_
 - [ ] _Collections, Memória, Threading, Concorrência_
 - [ ] _Fundamentos de Banco de Dados (SQL + Modelagem)_

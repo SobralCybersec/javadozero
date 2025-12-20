@@ -22,12 +22,16 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public void setNome(String nome, String cpf) {
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void atualizarDados(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public boolean validarCPF() {
+        return cpf != null && cpf.length() == 11;
     }
 }

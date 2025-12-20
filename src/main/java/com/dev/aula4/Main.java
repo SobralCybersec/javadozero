@@ -20,5 +20,8 @@ public class Main {
 
         ResultadoAgendamento resultado = agendarConsultaService.agendarConsulta(cliente1, LocalDate.now().plusDays(20)); // Executando Agendamento
         ResultadoAgendamento resultado2 = agendarConsultaService.agendarConsulta(cliente2, LocalDate.now().plusDays(21)); // Executando Agendamento
+
+        System.out.println(resultado.mensagem());
+        System.out.println(resultado2.mensagem());
     }
 }
